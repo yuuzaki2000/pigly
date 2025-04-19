@@ -1,0 +1,35 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #A6A7E4, #F3ABDA);
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input {
+    outline: solid 1px #E6E6E6;
+    display: block;
+    width: 400px;
+    height: 30px;
+    margin-bottom: 30px;
+
+}
+
+.body {
+    background: linear-gradient(135deg, #DCD1F7, #FFBCD5, #FFC1BB);
+}
+
+.error-message {
+    color: #ff0000;
+}

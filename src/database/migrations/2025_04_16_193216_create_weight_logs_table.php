@@ -16,11 +16,11 @@ class CreateWeightLogsTable extends Migration
         Schema::create('weight_logs', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
-            $table->date('date');
+            $table->date('date')->format('Y/m/d');
             $table->decimal('weight', 4, 1);
-            $table->integer('calories');
-            $table->time('exercise_time');
-            $table->text('exercise_content');
+            $table->integer('calories')->nullable();
+            $table->time('exercise_time')->nullable();
+            $table->text('exercise_content')->nullable();
             $table->timestamp('created_at')->useCurrent()->nullable();
             $table->timestamp('updated_at')->useCurrent()->nullable();
         });

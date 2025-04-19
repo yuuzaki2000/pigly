@@ -9,11 +9,11 @@
         <div class="inner">
             <div><p class="newer">新規会員登録</p></div>
             <div><p class="step1">STEP1 アカウント情報の登録</p></div>
-            <form action="/register" method="post">
+            <form action="/register/step1" method="post">
             @csrf
                 <div>
                     <p>お名前</p>
-                    <input type="text" name="name" value="{{old('name')}}">
+                    <input type="text" class="input" name="name" value="{{old('name')}}"  placeholder="名前を入力してください">
                 </div>
                 @error('name')
                         <div>
@@ -22,7 +22,7 @@
                 @enderror
                 <div>
                     <p>メールアドレス</p>
-                    <input type="email" name="email" value="{{old('email')}}">
+                    <input type="email" name="email" value="{{old('email')}}" placeholder="メールアドレスを入力してください">
                 </div>
                 @error('email')
                         <div>
@@ -31,15 +31,19 @@
                 @enderror
                 <div>
                     <p>パスワード</p>
-                    <input type="password" name="password">
+                    <input type="password" name="password" placeholder="パスワードを入力してください">
                 </div>
                 @error('password')
                         <div>
                             <p class="error-message">{{$errors->first('password')}}</p>
                         </div>                       
                 @enderror
-                <button class="btn" type="submit">次に進む</button>
-                <a href="/register/step2">STEP2へ</a>
+                <div>
+                    <button class="next-btn btn" type="submit">次に進む</button>
+                </div>
+                <div class="toLogin">
+                    <a href="/login">ログインはこちら</a>
+                </div>
             </form>
         </div>
     </div>

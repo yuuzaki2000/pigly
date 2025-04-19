@@ -12,7 +12,7 @@
             @csrf
                 <div>
                     <p>メールアドレス</p>
-                    <input type="email" name="email" value="{{old('email')}}">
+                    <input type="email" name="email" value="{{old('email')}}" placeholder="メールアドレスを入力">
                 </div>
                 @error('email')
                         <div>
@@ -21,7 +21,7 @@
                 @enderror
                 <div>
                     <p>パスワード</p>
-                    <input type="password" name="password">
+                    <input type="password" name="password" placeholder="パスワードを入力">
                 </div>
                 @error('password')
                         <div>
@@ -29,7 +29,7 @@
                         </div>                       
                 @enderror
                 <button class="btn" type="submit">ログイン</button>
-                <a href="/register">アカウント作成はこちら</a>
+                <a href="/register/step1">アカウント作成はこちら</a>
             </form>
         </div>
     </div>

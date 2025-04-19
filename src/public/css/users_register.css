@@ -1,3 +1,35 @@
-.error-message {
-    color: #ff0000;
+.container {
+    width: 30%;
+    height: 80%;
+    background-color: white;
+    margin: 60px auto;
+}
+
+.header {
+    text-align: center;
+    color: #E988EB;
+    font-size: 50px;
+}
+
+.inner {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.newer {
+    font-size: 30px;
+    text-align: center;
+}
+
+.step1 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.toLogin {
+    text-align: center;
+}
+
+.next-btn {
+    margin: 0 auto;
 }

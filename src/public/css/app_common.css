@@ -1,0 +1,65 @@
+html,
+body {
+    height: 100px;
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #A6A7E4, #F3ABDA);
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input {
+    outline: solid 1px #E6E6E6;
+    display: block;
+    width: 400px;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+.error-message {
+    color: #ff0000;
+}
+
+.app-header {
+    color: #F3ABDA;
+    font-weight: 400;
+    background-color: #FFF;
+    border-bottom: 1px solid #000;
+    height: 100px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-group {
+    display: flex;
+}
+
+.setting-btn {
+    display: block;
+    width: 200px;
+    height: 40px;
+    padding: 8px 32px;
+    background-color: #F6F6F6;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.logout-btn {
+    margin-left: 10px;
+}
+
+.content {
+    background-color: #F9F9F9;
+}
