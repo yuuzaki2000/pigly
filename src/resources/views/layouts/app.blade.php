@@ -13,10 +13,10 @@
     <header class="app-header">
         <h1>PiGly</h1>
         <div class="btn-group">
-            <a class="setting-btn" href="">目標体重設定</a>
+            <a href="/weight_logs/goal_setting" class="setting-btn">目標体重設定</a>
             <form action="/logout" method="post">
             @csrf
-                <button type="submit" class="setting-btn logout-btn" href="/logout">ログアウト</button>
+                <button type="submit" class="setting-btn logout-btn">ログアウト</button>
             </form>
         </div>
     </header>

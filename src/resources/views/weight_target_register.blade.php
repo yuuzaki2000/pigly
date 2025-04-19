@@ -26,7 +26,7 @@
                         <p>kg</p>
                     </div>
                     @error('weight')
-                        <div><p>{{$errors->first('weight')}}</p></div>
+                        <div><p class="error-message">{{$errors->first('weight')}}</p></div>
                     @enderror
                 </div>
                 <div>
@@ -36,7 +36,7 @@
                         <p>kg</p>
                     </div>
                     @error('target_weight')
-                        <div><p>{{$errors->first('target_weight')}}</p></div>
+                        <div><p class="error-message">{{$errors->first('target_weight')}}</p></div>
                     @enderror
                 </div>
                 <button class="btn" type="submit">アカウント作成</button>

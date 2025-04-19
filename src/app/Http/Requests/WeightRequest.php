@@ -25,19 +25,16 @@ class WeightRequest extends FormRequest
     {
         return [
             //
-            'weight' => 'required|digits_between:1,4|regex:/^\d+(\.\d{1,2})?$/',
-            'target_weight' => 'required|digits_between:1,4|regex:/^\d+(\.\d{1,2})?$/',
+            'weight' => 'required',
+            'target_weight' => 'required',
         ];
     }
 
-    public function messages(){
+    public function messages()
+    {
         return [
-            'weight.required' => '体重を入力してください',
-            'weight.digits_between' => '4桁までの数字で入力してください',
-            'weight.regex' => '整数または2桁までの数を記入してください',
-            'target_weight.required' => '体重を入力してください',
-            'target_weight.digits_between' => '4桁までの数字で入力してください',
-            'target_weight.regex' => '整数または2桁までの数を記入してください',
+            'weight.required' => '現在の体重を入力してください',
+            'target_weight.required' => '目標の体重を入力してください',
         ];
     }
 }

@@ -17,7 +17,7 @@ class WeightLogFactory extends Factory
         return [
             //
             'user_id' => 1,
-            'date' => $this->faker->dateTimeBetween('-1 year', 'now'),
+            'date' => $this->faker->dateTimeBetween('-1 year', 'now')->format('Y/m/d'),
             'weight' => $this->faker->randomFloat(1, 65, 70),
             'calories' => $this->faker->randomFloat(1,1000,3000),
             'exercise_time' => $this->faker->time('H:i'),

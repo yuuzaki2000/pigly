@@ -25,15 +25,13 @@ class WeightTargetRequest extends FormRequest
     {
         return [
             //
-            'target_weight' => 'required|max_digits:4|decimal:1',
+            'weight' => 'required',
         ];
     }
 
     public function messages(){
         return [
-            'target_weight.required' => '体重を入力してください',
-            'target_weight.max_digits' => '4桁までの数字で入力してください',
-            'weighttarget_weight.decimal' => '小数点は1桁で入力してください',
+            'weight.required' => '体重を入力してください。',
         ];
     }
 }

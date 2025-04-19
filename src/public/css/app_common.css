@@ -21,7 +21,7 @@ input {
     display: block;
     width: 400px;
     height: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .error-message {
@@ -58,8 +58,4 @@ input {
 
 .logout-btn {
     margin-left: 10px;
-}
-
-.content {
-    background-color: #F9F9F9;
 }

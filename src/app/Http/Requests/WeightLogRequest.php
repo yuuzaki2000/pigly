@@ -25,15 +25,21 @@ class WeightLogRequest extends FormRequest
     {
         return [
             //
-            'weight' => 'required|max_digits:4|decimal:1',
+            'date' => 'required',
+            'weight' => 'required',
+            'calories' => 'required|numeric',
+            'exercise_time' => 'required',
+            'exercise_content' => 'max:120'
         ];
     }
 
     public function messages(){
         return [
+            'date.required' => '日付を入力して下さい',
             'weight.required' => '体重を入力してください',
-            'weight.max_digits' => '4桁までの数字で入力してください',
-            'weight.decimal' => '小数点は1桁で入力してください',
+            'calories.required' => '摂取カロリーを入力してください',
+            'calories.numeric' => '数字で入力してください',
+            'exercise_time.required' => '運動時間を入力してください',
         ];
     }
 }
