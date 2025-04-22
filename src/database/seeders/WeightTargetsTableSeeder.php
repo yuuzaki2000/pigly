@@ -15,11 +15,5 @@ class WeightTargetsTableSeeder extends Seeder
     public function run()
     {
         //
-        $param = [
-            'id' => 1,
-            'user_id' => 1,
-            'target_weight' => 60.3,
-        ];
-        DB::table('weight_targets')->insert($param);
     }
 }
